@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Baja Bhais | Official Motorsport Engineering & Racing | PSG Tech</title>
+  
+  <!-- Favicon / Tab Icon -->
+  <link rel="icon" type="image/png" href="assets/team_logo.png">
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Official website of Team Baja Bhais, the premier collegiate Baja SAE off-road motorsport team from PSG College of Technology, Coimbatore. We Design. We Build. We Test. We Race.">
+  <meta name="keywords" content="Team Baja Bhais, Baja SAE India, PSG College of Technology, Motorsport Engineering, Off-road Buggy, All Wheel Drive Baja, Automotive Engineering">
+  <meta name="author" content="Team Baja Bhais">
+  
+  <!-- OpenGraph Meta Tags -->
+  <meta property="og:title" content="Team Baja Bhais | High-Octane Racing & Engineering">
+  <meta property="og:description" content="Explore 19 generations of collegiate motorsport evolution from PSG College of Technology.">
+  <meta property="og:image" content="assets/hero_car_real.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Google & CDN Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,600;0,700;1,700&family=Orbitron:wght@500;700;800;900&family=Rajdhani:wght@500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Carbon Fiber Background Texture -->
+  <div class="carbon-overlay"></div>
+
+  <!-- 1. TELEMETRY HUD TOP BAR -->
+  <aside class="telemetry-hud-topbar">
+    <div class="container hud-container">
+      <div class="hud-status-group">
+        <div class="hud-status-item">
+          <span class="hud-pulse-dot"></span>
+          <span>TELEMETRY: <strong class="text-cyan">LIVE & NOMINAL</strong></span>
+        </div>
+        <div class="hud-status-item">
+          <span>RACE CLOCK: <strong id="hud-clock" class="text-yellow">00:00:00.00 IST</strong></span>
+        </div>
+        <div class="hud-status-item">
+          <span>GARAGE: <strong>PSG TECH WORKSHOP</strong></span>
+        </div>
+      </div>
+      <div class="hud-status-group">
+        <button id="btn-mute" class="hud-audio-toggle" title="Toggle Sound">
+          <i class="fa-solid fa-volume-high"></i> <span>AUDIO ON</span>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 2. SITE NAVIGATION HEADER (PIRANHA RACING FORMAT) -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      
+      <!-- Brand Group (College + Team Logo) -->
+      <a href="#hero" class="brand-group" title="Team Baja Bhais — PSG College of Technology">
+        <div class="brand-logo-wrap">
+          <img src="assets/team_logo.png" alt="Team Baja Bhais Official Logo" class="brand-logo-img">
+        </div>
+        <div class="brand-divider"></div>
+        <div class="brand-text-block">
+          <span class="brand-name">TEAM BAJA BHAIS</span>
+          <span class="brand-inst">PSG COLLEGE OF TECHNOLOGY</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="nav-drawer">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#legacy" class="nav-link">Legacy Timeline</a></li>
+        <li><a href="#subsystems" class="nav-link">Subsystems</a></li>
+        <li><a href="#garage" class="nav-link">Build Tracker</a></li>
+        <li><a href="#team" class="nav-link">Team</a></li>
+        <li><a href="#sponsors" class="nav-link">Sponsors</a></li>
+        <li><a href="#media" class="nav-link">Gallery</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Action Button & Mobile Toggle -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn-header-cta"><i class="fa-solid fa-handshake"></i> Partner With Us</a>
+        <button class="mobile-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars" id="hamburger-icon"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- 3. HERO SECTION (FULL PAGE PARALLAX & RACING BANNER) -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg-container">
+      <img src="assets/hero_car_real.jpg" alt="Team Baja Bhais Flagship Off-Road Buggy" class="hero-bg-image" id="hero-parallax-bg">
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge-row">
+        <span class="hero-badge"><i class="fa-solid fa-trophy"></i> PSG TECH MOTORSPORT</span>
+        <span class="hero-badge badge-cyan"><i class="fa-solid fa-bolt"></i> 19 YEARS OF HERITAGE</span>
+        <span class="hero-badge"><i class="fa-solid fa-shield-halved"></i> SAE BAJA REGULATION</span>
+      </div>
+
+      <h1 class="hero-title">
+        TEAM BAJA <span>BHAIS</span>
+      </h1>
+      <p class="hero-tagline">WE DESIGN. WE BUILD. WE TEST. WE RACE.</p>
+      
+      <p class="hero-description">
+        The premier collegiate off-road motorsport team of <strong>PSG College of Technology, Coimbatore</strong>. We engineer custom, race-proven single-seater all-terrain vehicles built to conquer brutal national endurance championships.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="#legacy" class="btn-primary" id="cta-explore-legacy">
+          <span>Explore Legacy (BB19-BB01)</span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+        <a href="#contact" class="btn-secondary">
+          <i class="fa-solid fa-handshake"></i> Join / Partner With Us
+        </a>
+      </div>
+    </div>
+
+    <!-- Mouse Scroll Down Indicator -->
+    <a href="#about" class="scroll-indicator">
+      <div class="mouse-icon">
+        <div class="mouse-wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </a>
+  </section>
+
+  <!-- 4. ABOUT & HIGHLIGHTS SECTION (3 RICH GLASS CARDS) -->
+  <section class="section-padding" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Engineering Excellence</span>
+        <h2 class="section-title">Driven By Passion, Engineered to Win</h2>
+        <p class="section-desc">From initial 3D CAD modeling and finite element stress analysis to CNC machining and high-speed dirt track testing.</p>
+      </div>
+
+      <div class="feature-grid">
+        <!-- Card 1: mBAJA Combustion & AWD -->
+        <div class="glass-card">
+          <div class="card-icon">
+            <i class="fa-solid fa-fire-flame-curved"></i>
+          </div>
+          <h3 class="card-title">mBAJA & AWD Traction</h3>
+          <p class="card-desc">
+            Raw combustion power meeting precision all-wheel drive engineering. High-torque single-cylinder Briggs & Stratton / Honda powerplants paired with custom-tuned continuously variable transmissions (CVT) and torque-splitting gearboxes.
+          </p>
+        </div>
+
+        <!-- Card 2: Precision Vehicle Dynamics -->
+        <div class="glass-card">
+          <div class="card-icon">
+            <i class="fa-solid fa-arrows-up-down"></i>
+          </div>
+          <h3 class="card-title">Vehicle Dynamics & Suspension</h3>
+          <p class="card-desc">
+            Custom long-travel front double wishbones and multi-link trailing arms with nitrogen-charged adjustable coilovers delivering 250mm of ultra-wheel articulation with zero bump-steer across rocks, logs, and vertical inclines.
+          </p>
+        </div>
+
+        <!-- Card 3: Interdisciplinary Learning -->
+        <div class="glass-card">
+          <div class="card-icon">
+            <i class="fa-solid fa-gears"></i>
+          </div>
+          <h3 class="card-title">Interdisciplinary Learning</h3>
+          <p class="card-desc">
+            An elite collegiate engineering division combining Automobile, Mechanical, and Production engineers from PSG College of Technology. From chassis TIG welding and hydraulics to corporate sponsorships and logistics.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. TEAM LEGACY TIMELINE (BB-19 TO BB-01) WITH ANIMATED MOVING BUGGY -->
+  <section class="timeline-section-wrapper" id="legacy">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Our History & Evolution</span>
+        <h2 class="section-title">Team Legacy: BB-19 to BB-01</h2>
+        <p class="section-desc">Explore 19 consecutive generations of collegiate motorsport evolution from PSG College of Technology, starting from our modern AWD flagship back to our founding pioneer.</p>
+      </div>
+
+      <!-- Era Filtering Toolbar & Navigation Controls -->
+      <div class="timeline-era-toolbar">
+        <div class="timeline-era-pills">
+          <button class="era-pill-btn active" data-era="all">ALL GENERATIONS (BB-19 – BB-01)</button>
+          <button class="era-pill-btn" data-era="awd"><i class="fa-solid fa-bolt text-cyan"></i> AWD ERA (BB15-BB19)</button>
+          <button class="era-pill-btn" data-era="cvt"><i class="fa-solid fa-gears text-yellow"></i> CVT & DYNAMICS (BB08-BB14)</button>
+          <button class="era-pill-btn" data-era="genesis"><i class="fa-solid fa-flag-checkered text-accent"></i> FOUNDATION (BB01-BB07)</button>
+        </div>
+
+        <div class="timeline-nav-group">
+          <button class="timeline-nav-arrow" id="timeline-prev" aria-label="Scroll left" title="Previous Generation"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="timeline-nav-arrow" id="timeline-next" aria-label="Scroll right" title="Next Generation"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+
+      <!-- ==================================================================
+           ANIMATED MOVING BUGGY TRACK INDICATOR
+           ================================================================== -->
+      <div class="timeline-buggy-track-wrapper">
+        <div class="timeline-track-rail">
+          <div class="timeline-track-progress" id="timeline-track-progress"></div>
+          <div class="timeline-moving-buggy" id="timeline-moving-buggy" title="Racing Buggy Tracking Timeline">
+            <i class="fa-solid fa-car-side"></i>
+            <span class="buggy-exhaust-flame"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Horizontal Timeline Container -->
+      <div class="timeline-horizontal" id="timeline-container">
+        <div class="timeline-track-flex" id="timeline-track-flex">
+          <!-- Dynamically populated via app.js with rich boxed cards BB-19 to BB-01 -->
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px; color: var(--text-muted); font-family: var(--font-tech); font-size: 0.85rem;">
+        <span><i class="fa-solid fa-arrows-left-right text-accent"></i> DRAG OR USE ARROWS TO MOVE BUGGY ALONG TIMELINE</span>
+        <button class="btn btn-secondary" onclick="openCarComparator('BB-19', 'BB-01')" style="padding: 6px 14px; font-size: 0.82rem;">
+          <i class="fa-solid fa-code-compare text-accent"></i> SIDE-BY-SIDE CAR COMPARATOR
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 6. THE 4 CORE SUBSYSTEMS SECTION -->
+  <section class="section-padding" id="subsystems">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Vehicle Architecture</span>
+        <h2 class="section-title">The 4 Core Engineering Subsystems</h2>
+        <p class="section-desc">Every single tube, bolt, and hydraulic circuit is calculated, simulated, and fabricated for extreme off-road survival.</p>
+      </div>
+
+      <div class="subsystems-grid">
+        
+        <!-- Subsystem 1: Powertrain & CVT -->
+        <div class="subsystem-card">
+          <div class="subsystem-img-wrap">
+            <img src="assets/hero_buggy.jpg" alt="Powertrain & Engine Tuning" loading="lazy">
+            <span class="subsystem-badge-tag">PROPULSION & POWER</span>
+          </div>
+          <div class="subsystem-body">
+            <div class="subsystem-lead-name"><i class="fa-solid fa-user text-accent"></i> Lead: Hariharan S</div>
+            <h3 class="subsystem-card-title">Powertrain & CVT</h3>
+            <p class="subsystem-card-desc">
+              High-torque Honda GX430 / Briggs single-cylinder OHV powerplant paired with a custom-tuned JIT continuously variable transmission (CVT) calibrated for aggressive low-end uphill throttle response.
+            </p>
+            <div class="subsystem-specs-mini">
+              <div class="spec-mini-item">
+                <span class="spec-mini-k">ENGINE</span>
+                <span class="spec-mini-v">Honda GX430 OHV</span>
+              </div>
+              <div class="spec-mini-item">
+                <span class="spec-mini-k">OUTPUT</span>
+                <span class="spec-mini-v">9.6 kW / 12.8 HP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Subsystem 2: Vehicle Dynamics & Suspension -->
+        <div class="subsystem-card">
+          <div class="subsystem-img-wrap">
+            <img src="assets/race_action.jpg" alt="Vehicle Dynamics & Suspension" loading="lazy">
+            <span class="subsystem-badge-tag">HANDLING & GEOMETRY</span>
+          </div>
+          <div class="subsystem-body">
+            <div class="subsystem-lead-name"><i class="fa-solid fa-user text-accent"></i> Lead: Sujeet VS</div>
+            <h3 class="subsystem-card-title">Vehicle Dynamics & Suspension</h3>
+            <p class="subsystem-card-desc">
+              Unequal length double wishbones and multi-link trailing arms with nitrogen-charged coilovers delivering 250mm ultra wheel travel, anti-dive kinematics, and zero bump-steer.
+            </p>
+            <div class="subsystem-specs-mini">
+              <div class="spec-mini-item">
+                <span class="spec-mini-k">WHEEL TRAVEL</span>
+                <span class="spec-mini-v">250mm Front / 230mm Rear</span>
+              </div>
+              <div class="spec-mini-item">
+                <span class="spec-mini-k">GEOMETRY</span>
+                <span class="spec-mini-v">Double A-Arm</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Subsystem 3: Braking System & Hydraulics -->
+        <div class="subsystem-card">
+          <div class="subsystem-img-wrap">
+            <img src="assets/cad_wireframe.jpg" alt="Brakes & Hydraulics" loading="lazy">
+            <span class="subsystem-badge-tag">STOPPING FORCE</span>
+          </div>
+          <div class="subsystem-body">
+            <div class="subsystem-lead-name"><i class="fa-solid fa-user text-accent"></i> Lead: Manimaaran</div>
+            <h3 class="subsystem-card-title">Braking System & Hydraulics</h3>
+            <p class="subsystem-card-desc">
+              Split front-rear dual hydraulic master cylinders with cockpit balance bar, slotted ventilated stainless rotors, and quad-piston calipers passing SAE 4-wheel lockup instantly.
+            </p>
+            <div class="subsystem-specs-mini">
+              <div class="spec-mini-item">
+                <span class="spec-mini-k">LOCKUP TEST</span>
+                <span class="spec-mini-v">4-Wheel Instant</span>
+              </div>
+              <div class="spec-mini-item">
+                <span class="spec-mini-k">ROTORS</span>
+                <span class="spec-mini-v">180mm Slotted AISI 420</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Subsystem 4: Rollcage & Chromoly Spaceframe -->
+        <div class="subsystem-card">
+          <div class="subsystem-img-wrap">
+            <img src="assets/workshop_weld.jpg" alt="Rollcage & Spaceframe" loading="lazy">
+            <span class="subsystem-badge-tag">STRUCTURAL SAFETY</span>
+          </div>
+          <div class="subsystem-body">
+            <div class="subsystem-lead-name"><i class="fa-solid fa-user text-accent"></i> Lead: Vishnu Vardhan</div>
+            <h3 class="subsystem-card-title">Rollcage & Spaceframe</h3>
+            <p class="subsystem-card-desc">
+              FIA/SAE compliant spaceframe constructed from seamless AISI 4130 Chromoly steel tubing, precision notched and 100% argon-purged TIG welded for maximum driver safety and rigidity.
+            </p>
+            <div class="subsystem-specs-mini">
+              <div class="spec-mini-item">
+                <span class="spec-mini-k">MATERIAL</span>
+                <span class="spec-mini-v">AISI 4130 Chromoly</span>
+              </div>
+              <div class="spec-mini-item">
+                <span class="spec-mini-k">SAFETY FACTOR</span>
+                <span class="spec-mini-v">3.2x Impact Factor</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. LIVE GARAGE BUILD TRACKER -->
+  <section class="section-padding" id="garage" style="background: #090B0E;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Current Development Status</span>
+        <h2 class="section-title">2025-2026 Season Build Tracker</h2>
+        <p class="section-desc">Real-time status tracking our next-generation AWD prototype in the PSG Tech workshop.</p>
+      </div>
+
+      <div class="garage-tracker-box">
+        <div class="garage-progress-header">
+          <div class="garage-progress-title">VEHICLE FABRICATION STATUS</div>
+          <div class="garage-progress-percent" id="garage-progress-percent">88%</div>
+        </div>
+
+        <div class="progress-track">
+          <div class="progress-fill" id="garage-progress-fill"></div>
+        </div>
+
+        <div class="milestones-grid" id="garage-milestone-list">
+          <!-- Populated dynamically via app.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. THE TEAM LEADERSHIP ROSTER -->
+  <section class="section-padding" id="team">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Meet The Engineers</span>
+        <h2 class="section-title">Team Leadership</h2>
+        <p class="section-desc">An elite multidisciplinary division of student engineers from PSG College of Technology.</p>
+      </div>
+
+      <!-- Department Filter Tabs -->
+      <div class="team-filters-bar">
+        <button class="team-filter-btn active" data-filter="all">ALL DEPARTMENTS</button>
+        <button class="team-filter-btn" data-filter="leadership">LEADERSHIP</button>
+        <button class="team-filter-btn" data-filter="powertrain">POWERTRAIN</button>
+        <button class="team-filter-btn" data-filter="dynamics">VEHICLE DYNAMICS</button>
+        <button class="team-filter-btn" data-filter="brakes">BRAKES</button>
+        <button class="team-filter-btn" data-filter="rollcage">ROLLCAGE</button>
+        <button class="team-filter-btn" data-filter="operations">OPERATIONS</button>
+      </div>
+
+      <div class="team-members-grid" id="team-members-grid">
+        <!-- Dynamically rendered via app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. OFFICIAL SPONSORS & PARTNERS -->
+  <section class="section-padding" id="sponsors" style="background: #090B0E;">
+    <div class="container">
+      
+      <!-- Current Valued Sponsors Showcase -->
+      <div class="section-header">
+        <span class="section-subtitle">Industrial Alliance</span>
+        <h2 class="section-title">Our Official Sponsors & Partners</h2>
+        <p class="section-desc">We proudly represent our esteemed industrial partners who power our engineering research, tooling, and track dominance.</p>
+      </div>
+
+      <div class="current-sponsors-grid" id="current-sponsors-grid">
+        <!-- Dynamically rendered via app.js with Bull Machines, Sree Tulsi TVS, Salem Mines, KK Constructions -->
+      </div>
+
+      <!-- Partnership Tiers -->
+      <div class="section-header" style="margin-top: 70px;">
+        <span class="section-subtitle">Join The Grid</span>
+        <h2 class="section-title">Partner With The Machine</h2>
+        <p class="section-desc">Gain prominent livery branding, digital PR reach, campus exhibition presence, and priority engineering recruitment access.</p>
+      </div>
+
+      <div class="sponsorship-tiers-grid" id="sponsorship-tiers-grid">
+        <!-- Populated dynamically via app.js -->
+      </div>
+
+      <div style="text-align: center; margin-top: 48px;">
+        <button class="btn btn-secondary" onclick="openSponsorModal('Title')">
+          <i class="fa-solid fa-file-pdf text-accent"></i> VIEW SPONSORSHIP PROSPECTUS DECK
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. VISUAL MEDIA ARCHIVES -->
+  <section class="section-padding" id="media">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Visual Archives</span>
+        <h2 class="section-title">From the Garage to the Grid</h2>
+        <p class="section-desc">Witness the sparks, sweat, and precision that power Team Baja Bhais.</p>
+      </div>
+
+      <div class="media-gallery-grid" id="media-gallery-grid">
+        <!-- Populated dynamically via app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. DIRECT CONTACT & DISPATCH -->
+  <section class="section-padding" id="contact" style="background: #090B0E;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Direct Dispatch</span>
+        <h2 class="section-title">Let's Build Something That Moves</h2>
+        <p class="section-desc">Inquire about corporate sponsorships, technical partnerships, or team recruitment.</p>
+      </div>
+
+      <div class="contact-layout-grid">
+        <!-- Left: Official Contact Info -->
+        <div class="contact-info-col">
+          <h3 style="font-size: 1.5rem; color: #FFF; margin-bottom: 20px;">PSG TECH GARAGE HQ</h3>
+          <p style="margin-bottom: 28px; line-height: 1.7;">
+            We are always eager to collaborate with automotive industry leaders, component manufacturers, alumni, and technical sponsors.
+          </p>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <div class="contact-info-label">OFFICIAL TEAM EMAIL</div>
+              <a href="mailto:bajabhais@psgtech.ac.in" class="contact-info-val">bajabhais@psgtech.ac.in</a>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <div>
+              <div class="contact-info-label">SPONSORSHIP DESK</div>
+              <a href="mailto:sponsor.bajabhais@psgtech.edu" class="contact-info-val">sponsor.bajabhais@psgtech.edu</a>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <div class="contact-info-label">CAMPUS WORKSHOP</div>
+              <div class="contact-info-val">PSG College of Technology, Avinashi Rd, Peelamedu, Coimbatore, TN 641004</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Interactive Transmission Form -->
+        <form id="baja-contact-form">
+          <div class="form-group">
+            <label class="form-label" for="contact-name">YOUR NAME / ORGANIZATION *</label>
+            <input type="text" id="contact-name" class="form-input" placeholder="e.g. John Doe / Bosch Mobility" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contact-email">BUSINESS / OFFICIAL EMAIL *</label>
+            <input type="email" id="contact-email" class="form-input" placeholder="e.g. name@company.com" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contact-type">INQUIRY CATEGORY</label>
+            <select id="contact-type" class="form-select">
+              <option value="sponsorship">Corporate Sponsorship & Branding</option>
+              <option value="technical">Technical Partnership & Tooling</option>
+              <option value="recruitment">Campus Recruitment & Talent</option>
+              <option value="general">General Team Inquiry</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contact-message">MESSAGE / PROPOSAL DETAILS *</label>
+            <textarea id="contact-message" class="form-textarea" placeholder="Tell us how you would like to partner with Team Baja Bhais..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            <i class="fa-solid fa-bolt"></i> DISPATCH TRANSMISSION
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. SITE FOOTER (PIRANHA RACING FORMAT) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Column 1: Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-link-list">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Engineering</a></li>
+            <li><a href="#legacy">Legacy Timeline (BB19-BB01)</a></li>
+            <li><a href="#subsystems">4 Core Subsystems</a></li>
+            <li><a href="#garage">2025-2026 Build Tracker</a></li>
+            <li><a href="#team">Team Leadership</a></li>
+            <li><a href="#sponsors">Our Sponsors</a></li>
+            <li><a href="#media">Visual Gallery</a></li>
+            <li><a href="#contact">Apply / Partner With Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Leadership Contacts -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Contact Us</h4>
+          <div class="footer-contact-item">
+            <span class="footer-contact-name">Maniaatheessh (Team Captain)</span>
+            <a href="mailto:bajabhais@psgtech.ac.in" class="footer-contact-link">bajabhais@psgtech.ac.in</a>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-name">Yashwanth GP (Vice Captain)</span>
+            <a href="mailto:bajabhais@psgtech.ac.in" class="footer-contact-link">bajabhais@psgtech.ac.in</a>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-name">Jaishwin Raj (Team Manager & Sponsorships)</span>
+            <a href="mailto:sponsor.bajabhais@psgtech.edu" class="footer-contact-link">sponsor.bajabhais@psgtech.edu</a>
+          </div>
+        </div>
+
+        <!-- Column 3: Find Us & Socials -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Find Us</h4>
+          <a href="https://maps.google.com/?q=PSG+College+of+Technology+Coimbatore" target="_blank" rel="noopener noreferrer" class="footer-map-pip" title="Open PSG Tech Workshop on Google Maps">
+            <div class="footer-map-pip-label">
+              <i class="fa-solid fa-location-dot"></i> PSG College of Technology, Coimbatore
+            </div>
+          </a>
+          <div class="social-links-large">
+            <a href="https://instagram.com/teambajabhais" target="_blank" rel="noopener noreferrer" class="social-icon-lg" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com/company/team-baja-bhais" target="_blank" rel="noopener noreferrer" class="social-icon-lg" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://youtube.com/@teambajabhais" target="_blank" rel="noopener noreferrer" class="social-icon-lg" aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://shripalyedunutula-art.github.io/team-baja-bhais/" target="_blank" rel="noopener noreferrer" class="social-icon-lg" aria-label="Legacy Website">
+              <i class="fa-solid fa-globe"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Slogan Bar -->
+      <div class="footer-slogan-wrap">
+        <span class="footer-slogan">WE DESIGN. WE BUILD. WE TEST. WE RACE.</span>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Team Baja Bhais, PSG College of Technology. All rights reserved. Built for BAJA SAE.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 13. CAR COMPARATOR MODAL -->
+  <div class="modal-backdrop" id="car-comparator-modal">
+    <div class="modal-content-box" style="max-width: 860px; padding: 30px;">
+      <button class="modal-close-btn" onclick="closeAllModals()"><i class="fa-solid fa-xmark"></i></button>
+      <div class="subsystem-meta" style="margin-bottom: 6px;">
+        <span class="subsystem-tag"><i class="fa-solid fa-code-compare"></i> VEHICLE COMPARATOR</span>
+        <span class="subsystem-badge">BB-19 TO BB-01</span>
+      </div>
+      <h3 style="font-size: 1.8rem; color: #FFF; margin-bottom: 8px;">GENERATION VEHICLE COMPARATOR</h3>
+      <p style="margin-bottom: 16px; font-size: 0.95rem; color: var(--text-secondary);">
+        Select any two generations of Team Baja Bhais buggies to compare technical specs and engineering milestones side-by-side.
+      </p>
+
+      <!-- Selector Dropdowns -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
+        <div>
+          <label class="form-label">SELECT VEHICLE 1</label>
+          <select id="compare-select-a" class="form-select"></select>
+        </div>
+        <div>
+          <label class="form-label">SELECT VEHICLE 2</label>
+          <select id="compare-select-b" class="form-select"></select>
+        </div>
+      </div>
+
+      <div id="compare-table-container"></div>
+    </div>
+  </div>
+
+  <!-- 14. SPONSOR DECK MODAL -->
+  <div class="modal-backdrop" id="sponsor-deck-modal">
+    <div class="modal-content-box">
+      <button class="modal-close-btn" onclick="closeAllModals()"><i class="fa-solid fa-xmark"></i></button>
+      <div class="subsystem-meta" style="margin-bottom: 8px;">
+        <span class="subsystem-tag"><i class="fa-solid fa-file-pdf"></i> OFFICIAL PROSPECTUS</span>
+        <span class="subsystem-badge">2025-2026 SEASON</span>
+      </div>
+      <h3 style="font-size: 1.8rem; color: #FFF; margin-bottom: 12px;">SPONSORSHIP & PARTNERSHIP DECK</h3>
+      <p style="margin-bottom: 20px; line-height: 1.6;">
+        Partner with Team Baja Bhais to elevate your brand across national Baja SAE competitions, auto expos, social media channels, and gain priority recruitment access to top PSG Tech engineers.
+      </p>
+
+      <div class="spec-matrix-grid" style="margin-bottom: 24px;">
+        <div class="spec-matrix-item">
+          <span class="spec-matrix-label">COMPETITION REACH</span>
+          <span class="spec-matrix-value">15,000+ Track Attendees</span>
+        </div>
+        <div class="spec-matrix-item">
+          <span class="spec-matrix-label">MEDIA IMPRESSIONS</span>
+          <span class="spec-matrix-value">50,000+ Digital Views</span>
+        </div>
+        <div class="spec-matrix-item">
+          <span class="spec-matrix-label">ENGINEERING TALENT</span>
+          <span class="spec-matrix-value">Automobile, Mech & Prod</span>
+        </div>
+        <div class="spec-matrix-item">
+          <span class="spec-matrix-label">VEHICLE LIVERY</span>
+          <span class="spec-matrix-value">High-Contrast Body Panels</span>
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+        <a href="#contact" class="btn btn-primary" onclick="closeAllModals()" style="flex: 1;">
+          <i class="fa-solid fa-handshake"></i> INQUIRE NOW
+        </a>
+        <a href="mailto:sponsor.bajabhais@psgtech.edu?subject=Sponsorship%20Inquiry%20-%20Team%20Baja%20Bhais" class="btn btn-secondary" style="flex: 1;">
+          <i class="fa-solid fa-envelope"></i> EMAIL DESK
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 15. MEDIA LIGHTBOX MODAL -->
+  <div class="modal-backdrop" id="media-lightbox-modal">
+    <div class="modal-content-box" style="max-width: 900px; padding: 24px;">
+      <button class="modal-close-btn" onclick="closeAllModals()"><i class="fa-solid fa-xmark"></i></button>
+      <div style="width: 100%; border-radius: 8px; overflow: hidden; margin-bottom: 16px; background: #000;">
+        <img src="" alt="Full Resolution Motorsport Media" id="lightbox-img" style="width: 100%; max-height: 520px; object-fit: contain;">
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div>
+          <span class="subsystem-tag" id="lightbox-tag">CATEGORY</span>
+          <h4 style="font-size: 1.3rem; color: #FFF; margin-top: 4px;" id="lightbox-title">Media Title</h4>
+        </div>
+        <button class="btn btn-secondary" onclick="closeAllModals()">CLOSE</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 16. TOAST NOTIFICATION -->
+  <div class="toast-popup" id="toast-notification"></div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/data.js"></script>
+  <script src="js/telemetry.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
