@@ -3,17 +3,20 @@
    PSG College of Technology, Coimbatore
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,600;0,700;1,700&family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,500;0,700;1,700;1,800&family=Kanit:ital,wght@0,700;0,900;1,800;1,900&family=Orbitron:ital,wght@0,700;0,900;1,800;1,900&family=Rajdhani:wght@500;600;700;800&family=Russo+One&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@700;800&display=swap');
 
 :root {
   /* Racing Color Palette */
-  --bg-primary: #08090C;
-  --bg-secondary: #0E1015;
-  --bg-tertiary: #141720;
-  --bg-surface: #1B1F2A;
-  --bg-glass: rgba(14, 16, 21, 0.85);
+  --bg-primary: #07080B;
+  --bg-secondary: #0D0F14;
+  --bg-tertiary: #131722;
+  --bg-surface: #1A1F2C;
+  --bg-glass: rgba(10, 12, 16, 0.85);
 
-  /* Accent Neon Motorsport Colors */
+  /* Accent Motorsport Colors */
+  --accent-blue: #2563eb;
+  --accent-blue-bright: #3b82f6;
+  --accent-blue-glow: rgba(37, 99, 235, 0.55);
   --accent-orange: #FF4D00;
   --accent-orange-glow: rgba(255, 77, 0, 0.4);
   --accent-red: #E63946;
@@ -26,10 +29,11 @@
   --text-secondary: #B0B8C4;
   --text-muted: #64748B;
   --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-highlight: rgba(255, 77, 0, 0.4);
+  --border-highlight: rgba(37, 99, 235, 0.5);
   --border-cyan: rgba(0, 240, 255, 0.4);
 
   /* Typography Fonts */
+  --font-racing: 'Kanit', 'Syne', 'Orbitron', -apple-system, sans-serif;
   --font-display: 'Orbitron', -apple-system, sans-serif;
   --font-subheading: 'Chakra Petch', sans-serif;
   --font-tech: 'Rajdhani', monospace, sans-serif;
@@ -37,8 +41,7 @@
 
   /* Layout Constants */
   --container-max-width: 1340px;
-  --header-height: 80px;
-  --hud-height: 38px;
+  --header-height: 76px;
   --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }

@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function initNavbar() {
   const header = document.getElementById('header');
   const mobileBtn = document.getElementById('mobile-menu-btn');
+  const mobileClose = document.getElementById('mobile-menu-close');
   const navDrawer = document.getElementById('nav-drawer');
   const navLinks = document.querySelectorAll('.nav-link');
 
@@ -36,16 +37,35 @@ function initNavbar() {
 
   // Mobile navigation drawer toggle
   if (mobileBtn && navDrawer) {
-    mobileBtn.addEventListener('click', () => {
+    const closeDrawer = () => {
+      navDrawer.classList.remove('open');
+      document.body.classList.remove('menu-open');
+    };
+
+    mobileBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
       navDrawer.classList.toggle('open');
       document.body.classList.toggle('menu-open');
     });
 
+    if (mobileClose) {
+      mobileClose.addEventListener('click', (e) => {
+        e.stopPropagation();
+        closeDrawer();
+      });
+    }
+
     navLinks.forEach(link => {
       link.addEventListener('click', () => {
-        navDrawer.classList.remove('open');
-        document.body.classList.remove('menu-open');
+        closeDrawer();
       });
+    });
+
+    // Close when clicking outside drawer on mobile
+    document.addEventListener('click', (e) => {
+      if (navDrawer.classList.contains('open') && !navDrawer.contains(e.target) && !mobileBtn.contains(e.target)) {
+        closeDrawer();
+      }
     });
   }
 

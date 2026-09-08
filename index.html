@@ -22,7 +22,7 @@
   <!-- Google & CDN Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,600;0,700;1,700&family=Orbitron:wght@500;700;800;900&family=Rajdhani:wght@500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,500;0,700;1,700;1,800&family=Kanit:ital,wght@0,700;0,900;1,800;1,900&family=Orbitron:ital,wght@0,700;0,900;1,800;1,900&family=Rajdhani:wght@500;600;700;800&family=Russo+One&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/style.css">
@@ -37,30 +37,7 @@
   <!-- Carbon Fiber Background Texture -->
   <div class="carbon-overlay"></div>
 
-  <!-- 1. TELEMETRY HUD TOP BAR -->
-  <aside class="telemetry-hud-topbar">
-    <div class="container hud-container">
-      <div class="hud-status-group">
-        <div class="hud-status-item">
-          <span class="hud-pulse-dot"></span>
-          <span>TELEMETRY: <strong class="text-cyan">LIVE & NOMINAL</strong></span>
-        </div>
-        <div class="hud-status-item">
-          <span>RACE CLOCK: <strong id="hud-clock" class="text-yellow">00:00:00.00 IST</strong></span>
-        </div>
-        <div class="hud-status-item">
-          <span>GARAGE: <strong>PSG TECH WORKSHOP</strong></span>
-        </div>
-      </div>
-      <div class="hud-status-group">
-        <button id="btn-mute" class="hud-audio-toggle" title="Toggle Sound">
-          <i class="fa-solid fa-volume-high"></i> <span>AUDIO ON</span>
-        </button>
-      </div>
-    </div>
-  </aside>
-
-  <!-- 2. SITE NAVIGATION HEADER (PIRANHA RACING FORMAT) -->
+  <!-- SITE NAVIGATION HEADER (MINIMALIST MOTORSPORT GLASS HEADER) -->
   <header class="site-header" id="header">
     <div class="container header-container">
       
@@ -78,20 +55,25 @@
 
       <!-- Navigation Links -->
       <ul class="nav-links" id="nav-drawer">
-        <li><a href="#hero" class="nav-link active">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#legacy" class="nav-link">Legacy Timeline</a></li>
-        <li><a href="#subsystems" class="nav-link">Subsystems</a></li>
-        <li><a href="#garage" class="nav-link">Build Tracker</a></li>
-        <li><a href="#team" class="nav-link">Team</a></li>
-        <li><a href="#sponsors" class="nav-link">Sponsors</a></li>
-        <li><a href="#media" class="nav-link">Gallery</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li class="mobile-drawer-header">
+          <span class="brand-name">TEAM BAJA BHAIS</span>
+          <button class="mobile-close-btn" id="mobile-menu-close" aria-label="Close navigation menu">&times;</button>
+        </li>
+        <li><a href="#hero" class="nav-link active">HOME</a></li>
+        <li><a href="#about" class="nav-link">ABOUT</a></li>
+        <li><a href="#subsystems" class="nav-link">DEPARTMENTS</a></li>
+        <li><a href="#legacy" class="nav-link">LEGACY</a></li>
+        <li><a href="#media" class="nav-link">GALLERY</a></li>
+        <li><a href="#sponsors" class="nav-link">SPONSORS</a></li>
+        <li><a href="#contact" class="nav-link">APPLY NOW</a></li>
+        <li class="mobile-drawer-cta">
+          <a href="#contact" class="btn-primary-blue"><i class="fa-solid fa-bolt"></i> JOIN THE TEAM</a>
+        </li>
       </ul>
 
       <!-- Action Button & Mobile Toggle -->
       <div class="nav-actions">
-        <a href="#contact" class="btn-header-cta"><i class="fa-solid fa-handshake"></i> Partner With Us</a>
+        <a href="#contact" class="btn-primary-blue"><i class="fa-solid fa-bolt"></i> JOIN THE TEAM</a>
         <button class="mobile-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu">
           <i class="fa-solid fa-bars" id="hamburger-icon"></i>
         </button>
@@ -100,7 +82,7 @@
     </div>
   </header>
 
-  <!-- 3. HERO SECTION (FULL PAGE PARALLAX & RACING BANNER) -->
+  <!-- HERO SECTION (MINIMALIST HIGH-OCTANE MOTORSPORT BANNER) -->
   <section class="hero-section" id="hero">
     <div class="hero-bg-container">
       <img src="assets/hero_car_real.jpg" alt="Team Baja Bhais Flagship Off-Road Buggy" class="hero-bg-image" id="hero-parallax-bg">
@@ -108,38 +90,36 @@
     </div>
 
     <div class="hero-content">
-      <div class="hero-badge-row">
-        <span class="hero-badge"><i class="fa-solid fa-trophy"></i> PSG TECH MOTORSPORT</span>
-        <span class="hero-badge badge-cyan"><i class="fa-solid fa-bolt"></i> 19 YEARS OF HERITAGE</span>
-        <span class="hero-badge"><i class="fa-solid fa-shield-halved"></i> SAE BAJA REGULATION</span>
+      <!-- High-Octane Aggressive Slanted Racing Typography -->
+      <div class="hero-racing-title-block">
+        <h1 class="hero-racing-title">
+          <span class="racing-line-white">team baja bhais</span>
+          <span class="racing-line-blue">RACING</span>
+          <span class="racing-line-sub">ride for glory</span>
+        </h1>
       </div>
-
-      <h1 class="hero-title">
-        TEAM BAJA <span>BHAIS</span>
-      </h1>
-      <p class="hero-tagline">WE DESIGN. WE BUILD. WE TEST. WE RACE.</p>
       
-      <p class="hero-description">
-        The premier collegiate off-road motorsport team of <strong>PSG College of Technology, Coimbatore</strong>. We engineer custom, race-proven single-seater all-terrain vehicles built to conquer brutal national endurance championships.
+      <p class="hero-description hero-desc-minimal">
+        Join one of India's leading BAJA SAE teams and become a part of an engineering journey where innovation meets performance.
       </p>
 
       <div class="hero-cta-group">
-        <a href="#legacy" class="btn-primary" id="cta-explore-legacy">
-          <span>Explore Legacy (BB19-BB01)</span>
+        <a href="#contact" class="btn-hero-blue" id="cta-join-team">
+          <span>JOIN THE TEAM</span>
           <i class="fa-solid fa-chevron-right"></i>
         </a>
-        <a href="#contact" class="btn-secondary">
-          <i class="fa-solid fa-handshake"></i> Join / Partner With Us
+        <a href="#legacy" class="btn-hero-dark" id="cta-explore-legacy">
+          <span>EXPLORE LEGACY</span>
         </a>
       </div>
     </div>
 
-    <!-- Mouse Scroll Down Indicator -->
-    <a href="#about" class="scroll-indicator">
+    <!-- Minimalist Mouse Scroll Down Indicator -->
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down to About section">
       <div class="mouse-icon">
         <div class="mouse-wheel"></div>
       </div>
-      <span>Scroll Down</span>
+      <span class="scroll-text">SCROLL DOWN</span>
     </a>
   </section>
 
@@ -214,13 +194,37 @@
       </div>
 
       <!-- ==================================================================
-           ANIMATED MOVING BUGGY TRACK INDICATOR
+           ANIMATED MOVING BUGGY TRACK INDICATOR (OFF-ROAD ATV / BUGGY)
            ================================================================== -->
       <div class="timeline-buggy-track-wrapper">
         <div class="timeline-track-rail">
           <div class="timeline-track-progress" id="timeline-track-progress"></div>
-          <div class="timeline-moving-buggy" id="timeline-moving-buggy" title="Racing Buggy Tracking Timeline">
-            <i class="fa-solid fa-car-side"></i>
+          <div class="timeline-moving-buggy" id="timeline-moving-buggy" title="Racing Baja Buggy Tracking Timeline">
+            <!-- Custom Off-Road Baja ATV / Buggy SVG -->
+            <svg class="baja-atv-svg" viewBox="0 0 70 40" width="58" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Roll Cage & Chassis -->
+              <path d="M12 28 L16 16 L28 6 L44 6 L52 16 L64 22 L66 28 Z" fill="rgba(0, 240, 255, 0.18)" stroke="#00F0FF" stroke-width="2.2" stroke-linejoin="round"/>
+              <!-- Roll Cage Cross Bars -->
+              <line x1="28" y1="6" x2="33" y2="16" stroke="#00F0FF" stroke-width="1.8"/>
+              <line x1="44" y1="6" x2="39" y2="16" stroke="#00F0FF" stroke-width="1.8"/>
+              <line x1="28" y1="6" x2="44" y2="6" stroke="#FF4D00" stroke-width="2.5"/>
+              <line x1="16" y1="16" x2="52" y2="16" stroke="#00F0FF" stroke-width="1.8"/>
+              <!-- Suspension Springs (Front & Rear) -->
+              <path d="M18 20 L20 23 L16 25 L18 28" stroke="#FFB703" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M50 20 L52 23 L48 25 L50 28" stroke="#FFB703" stroke-width="1.8" stroke-linecap="round"/>
+              <!-- Rear Knobby Off-Road Wheel & Beadlock -->
+              <circle cx="18" cy="28" r="8" fill="#0E1015" stroke="#FF4D00" stroke-width="2.8"/>
+              <circle cx="18" cy="28" r="4.5" fill="#1B1F2A" stroke="#00F0FF" stroke-width="1.5"/>
+              <circle cx="18" cy="28" r="2" fill="#FF4D00"/>
+              <!-- Front Knobby Off-Road Wheel & Beadlock -->
+              <circle cx="50" cy="28" r="8" fill="#0E1015" stroke="#FF4D00" stroke-width="2.8"/>
+              <circle cx="50" cy="28" r="4.5" fill="#1B1F2A" stroke="#00F0FF" stroke-width="1.5"/>
+              <circle cx="50" cy="28" r="2" fill="#FF4D00"/>
+              <!-- Front Bumper / Bullbar -->
+              <path d="M62 20 L68 23 L65 28" stroke="#FFB703" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- Driver Helmet / Cockpit -->
+              <circle cx="34" cy="12" r="3.2" fill="#FFFFFF" stroke="#00F0FF" stroke-width="1.2"/>
+            </svg>
             <span class="buggy-exhaust-flame"></span>
           </div>
         </div>
